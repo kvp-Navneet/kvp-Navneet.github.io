@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Dashboard</title>
+<style type="text/css">
+body
+{
+background-image:url(a.jpg);
+}
+.register 
+{
+  background: #f0f0f0;
+  width: 600px;
+  margin: 0 auto;
+ margin-top:200px;
+
+
+}
+.formbody
+{
+  background: #f0f0f0;
+   padding: 10px 20px;
+
+}
+h1 {
+  background: #3399cc;
+  padding: 10px 0;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.8;
+}
+.register h1 {
+  background: #3399cc;
+  padding: 10px 0;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+}
+.formbody select, .formbody input[type="submit"]
+{
+
+
+width: 100%;
+  background: #ffffff;
+  margin-bottom: 7px;
+  border: 2px solid #ccc;
+  padding: 17px;
+font-size: 15px;
+  color: #555;
+
+}
+</style>
+
+</head>
+<body>
+<h1>welcome to NAvneet's Assignment Dashboard</h1>
+<div class="register">
+<h1>choose Assignment</h1>
+
+<div class="formbody" >
+<form name="myForm" id="myForm" >
+
+
+<select id="files" >
+   <option value="-1" selected>--------------------------------Select from list-----------------------------------</option>
+<option value="html./html/index.html" >HTML Website</option>
+<option value="htmlcss/html/home.html" >HTML Website with css</option>
+<option value="javaScript/Project_Html_Css_Java/Html/index.html" >javaScript Website</option>
+<option value="javaScript/form_validation/form.html" >javaScript form validation </option>
+<option value="task1/index.html" >Task 1 linkedin </option>
+<option value="#" >Task 2 AutoComplete using jquery plugins </option>
+<option value="#" >ruby website </option>
+<option value="#" >ror  web application </option>
+</select>
+
+<script>
+    document.getElementById("files").onchange = 
+    function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
+</script>
+
+</form>
+</div>
+</div>
+</body>
+</html

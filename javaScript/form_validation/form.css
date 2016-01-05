@@ -1,0 +1,56 @@
+.register 
+{
+  background: #f0f0f0;
+  width: 600px;
+  margin: 0 auto;
+
+
+}
+.formbody
+{
+  background: #f0f0f0;
+   padding: 10px 20px;
+
+}
+.register h1 {
+  background: #3399cc;
+  padding: 10px 0;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+}
+.formbody select, .formbody input[type="text"],.formbody input[type="email"],.formbody input[type="password"]
+{
+
+
+width: 85%;
+  background: #ffffff;
+  margin-bottom: 7px;
+  border: 2px solid #ccc;
+  padding: 17px;
+font-size: 15px;
+  color: #555;
+
+}
+
+span
+{
+color:#ff0000;
+font-size:12px;
+
+}
+.formbody input[type="submit"] {
+  width: 85%;
+  background: #3399cc;
+  border: 10px;
+  padding: 17px;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+
+}
+
+.register input[type="submit"]:hover {
+  background: #2288bb;
+}

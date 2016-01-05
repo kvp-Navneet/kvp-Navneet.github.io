@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>form</title>
+<link rel="stylesheet" type="text/css" href="form.css"/>
+<script type="text/javascript">
+
+      function validate(e)
+      {
+      
+           e.preventDefault();
+         if( document.myForm.fname.value == "" )
+         {
+      var   error="invalid data !";
+        document.getElementById('fnames').innerHTML=error;
+    fname.focus();  
+            
+            return false;
+
+}
+else
+{
+
+        document.getElementById('fnames').innerHTML=" ";
+
+}
+        if( document.myForm.lname.value == "" )
+         {
+        document.getElementById('lnames').innerHTML="invalid data";
+           lname.focus() ;
+            return false;
+         }
+         else
+{
+
+        document.getElementById('lnames').innerHTML=" ";
+
+}
+  
+         if( document.myForm.email.value == "" )
+         {
+               document.getElementById('emails').innerHTML="invalid data";
+           email.focus() ;
+            return false;
+         }
+                  else
+{
+
+        document.getElementById('emails').innerHTML=" ";
+
+}
+         
+         if( document.myForm.phone.value == "" ||
+         isNaN( document.myForm.phone.value ) ||
+         document.myForm.phone.value.length != 10 )
+         {
+         	       document.getElementById('phones').innerHTML="invalid data";
+   
+        phone.focus() ;
+            return false;
+         }
+            else
+{
+
+        document.getElementById('phones').innerHTML=" ";
+
+}
+     if( document.myForm.uname.value == "" )
+         {
+               document.getElementById('unames').innerHTML="invalid data";
+           email.focus() ;
+            return false;
+         }
+                  else
+{
+
+        document.getElementById('unames').innerHTML=" ";
+
+}
+     if( document.myForm.pass.value == "" )
+         {
+               document.getElementById('passs').innerHTML="invalid data";
+           email.focus() ;
+            return false;
+         }
+                  else
+{
+
+        document.getElementById('passs').innerHTML=" ";
+
+}
+         
+         if( document.myForm.gender.value == "-1" )
+         {
+    	       document.getElementById('genders').innerHTML="invalid data";
+            return false;
+         }
+                    else
+{
+
+        document.getElementById('genders').innerHTML=" ";
+
+}
+  
+         return( true );
+      }
+   </script>
+</head>
+<body>
+
+<div class="register">
+<h1>Sign Up</h1>
+<div class="formbody" >
+<form name="myForm" id="myForm" onsubmit="validate(event)">
+<input name="fname" type="text" id="fname" placeholder="First Name" onblur="validate()" /><span>*</span><span id="fnames"class="imp"></span>
+<input name="lname" type="text" id="lname"placeholder="Last Name" /><span>*</span><span id="lnames" class="imp" ></span>
+<input name="email" type="email" id="email" placeholder="Email" /><span>*</span><span id="emails" class="imp"></span>
+<input name="phone" type="text" id="phone"placeholder="Phone" /><span>*</span><span id="phones" class="imp"></span>
+<input name="uname" type="text" id="uname" placeholder="UserName" /><span>*</span><span id="unames" class="imp"></span>
+<input name="pass" type="password" id="pass" placeholder="Password" /><span>*</span><span id="passs"  class="imp"></span>
+<select name="gender" id="gender" ><span>*</span><span id="genders"  class="imp"></span>
+   <option value="-1" selected>------Select------</option>
+<option value="0" >Male</option>
+<option value="1" >Female</option>
+</select>
+<input name="linkedin" type="text" placeholder="Linked In Profile URL"/>
+<input type="submit" name="register" id="register" value="Register"/>
+</form>
+</div>
+</div>
+</body>
+</html
