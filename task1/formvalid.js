@@ -91,6 +91,10 @@ function validate_password(password){
 }
 
 function call_printmsg(msg){
+			$("#error_text").slideDown(500);
+			$("#text").text(msg);
+		}
+/*function call_printmsg(msg){
 			$("#error_text").slideDown(500).css("background-color","#DF0101");
 			$("#error_text").text(msg);
-		}
+		}*/
