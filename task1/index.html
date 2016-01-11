@@ -2,76 +2,60 @@
 <head>
 <title>Task 1</title>
 <link rel="stylesheet" type="text/css"  href="style.css">
-
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="bootstrap.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="submit_disable.js" type="text/javascript"></script>
-
- <link rel="stylesheet" type="text/css" href="form.css"/>
-
-  <script src="formvalid.js" type="text/javascript"></script>
-  
+<link rel="stylesheet" type="text/css" href="form.css"/>
+<script src="formvalid.js" type="text/javascript"></script>
 </head>
 <body>
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="header">
+<div class="container-fluid">
+<header class="header">
 <div id="logo">
-<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 png">
+<div class="logo_image">
 <img src="logo.png" alt="LinkedIn" ></div>
-
-<div class="lform col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<div class="lform">
 <form class="form-inline" id="lform">
 <div class="form-group"><input type="text" class="form-control" placeholder="Email" id="email1" autofocus="autofocus"></div>
-<div class="form-group"><input type="password" class="form-control" id="password1" placeholder="Password"></div>
-<div class="form-group"><button type="submit" class="btn btn-default btn-block" id="submit"disabled="disabled">sign in</button></div>
-
-
-
-<p><a href="#">Forget Password?</a></p>
+<div class="form-group"><input type="password" class="form-control" id="password1" placeholder="Password">
+<p><a href="#">Forget Password?</a></p></div>
+<div class="form-group"><button type="submit" class="btn btn-default btn-block" id="submit"disabled="disabled">sign in</button>
+</div>
 </form>
 </div>
 </div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="main">
+</header>
+<div class="main">
       <div class="form-container">
-          
-		<div class="register">
-			<h1 class="registerh">Be great at what you do</h1>
-			<h4 class="registerh4">Get started - it's free.</h4>
-			<div class="msg" id="error_text">
+          <div class="register_block">
+			<h1 class="register_heading">Be great at what you do</h1>
+			<h4 class="register_subheading">Get started - it's free.</h4>
+			<div class="message" id="error_text">
      <span class="glyphicon glyphicon-remove-circle" id="crossc"></span>
      <span id="text"></span>
 <span class="glyphicon glyphicon-remove cross"></span>
 			</div>
-				
-
-			   <form name="myForm" id="myForm" onsubmit="#" novalidate="novalidate">
+				<form name="myForm" id="myForm" onsubmit="#" novalidate="novalidate">
 				<p>First name</p><input name="firstname" type="text" id="firstname"/>
 				<p>Last name</p><input name="lastname" type="text" id="lastname"/>
 				<p class="p1">Email</p><input name="email" type="email" id="email"/>
 				<p class="p2">Password</p><input name="password" type="password" id="password"/>
-				<h6>By clicking Join now, you agree to LinkedIn's <a href="#">User Agreement</a>, <a href="#"><br>Privacy Policy</a>, and <a href="#">Cookie Policy</a>
+				<h6>By clicking Join now, you agree to LinkedIn's <a href="#">User Agreement</a>, <a href="#"><br><span class="move">Privacy Policy</a>, and <a href="#">Cookie Policy</a></span>
 				</h6>
 				<input type="button" name="register" id="register" value="Get Started"/>
 			   </form>
 			</div>
 		</div>
 		</div>
-      </div>
-</div>
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-6 col-xs-6" id="footer">
+  <footer class="footer">
 <div class="browse">
 <div class="search">
-<form ="GET" class="form-inline" action="#" id="sform">
-
-<p id="fh2">Find a colleague:</p><div class="form-group"><input type="text" name="first" class="form-control" placeholder="First name" autofocus="autofocus" required="required"></div>
+<form ="GET" class="form-inline" action="#" id="footer_form">
+<p id="footer_header">Find a colleague:</p><div class="form-group"><input type="text" name="first" class="form-control" placeholder="First name" autofocus="autofocus" required="required"></div>
 <div class="form-group"><input type="text" name="last" class="form-control" placeholder="Last name" required="required"></div>
-<div class="form-group"><button type="submit" class="btn btn-default btn-block" name="search" >Search</button></div>
+<div class="form-group"><button type="submit" class="btn btn-default btn-block" name="search" id="search"  >Search</button></div>
 </form></div>
 <div class="directory">
 <ol>
@@ -106,56 +90,51 @@
 <li><a class="country" href="#">Browse by country</a></li>
 </ol></div>
 </div>
-<div class="row">
-
-
-
 <div class="links">
-<div class="row">
-<div class="link col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="common-link">
 <h3>General</h3>
 <ul>
-<li class="first"><a href="#">Sign Up</a></li>
-<li><a href="#">Help Center</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Press</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Careers</a></li>
+<li><a href="#">Sign Up |</a></li>
+<li><a href="#">Help Center |</a></li>
+<li><a href="#">About |</a></li>
+<li><a href="#">Press |</a></li>
+<li><a href="#">Blog |</a></li>
+<li><a href="#">Careers |</a></li>
 <li class="last"><a href="#">Developers</a></li>
 </ul>
 </div>
-<div class="link col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="common-link">
 <h3>Business Solutions</h3>
 <ul>
-<li class="first"><a href="#">Talent</a></li>
-<li><a href="#">Marketing</a></li>
+<li><a href="#">Talent |</a></li>
+<li><a href="#">Marketing |</a></li>
 <li class="last"><a href="#">Sales</a></li>
 </ul>
-</div></div><div class="row">
-<div class="link col-lg-6 col-md-6 col-sm-12 col-xs-12">
+</div>
+<div class="common-link">
 <h3>Browse LinkedIn</h3>
-<ul><li class="first"><a href="#">Updates</a></li>
-<li><a href="#">Influencers</a></li>
-<li><a href="#">Jobs</a></li>
+<ul><li><a href="#">Updates |</a></li>
+<li><a href="#">Influencers |</a></li>
+<li><a href="#">Jobs |</a></li>
 <li class="last"><a href="#">Mobile</a></li>
 </ul>
 </div>
-<div class="link col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="common-link">
 <h3>Directories</h3><ul>
-<li class="first"><a href="#">Members</a></li>
-<li><a href="#">Jobs</a></li>
-<li><a href="#">Pulse</a></li>
-<li><a href="#">Companies</a></li>
-<li><a href="#">Groups</a></li>
-<li><a href="#">Universities</a></li>
+<li><a href="#">Members |</a></li>
+<li><a href="#">Jobs |</a></li>
+<li><a href="#">Pulse |</a></li>
+<li><a href="#">Companies |</a></li>
+<li><a href="#">Groups |</a></li>
+<li><a href="#">Universities |</a></li>
 <li class="last"><a href="#">Titles</a></li>
 </ul>
 </div>
-</div></div>
-<div class="legal col-lg-12 col-md-12 col-sm-12 col-xs-12">
+</div>
+<div class="legal">
 <div class='legal-info'>
 <div class="copyright">
-  <img class="logo-copyright" src="https://static.licdn.com/sc/h/5koy91fjbrc47yhwyzws65ml7" width="56" height="14" alt="LinkedIn"><span>&copy;2015</span>
+  <img class="logo-copyright"src="https://static.licdn.com/sc/h/5koy91fjbrc47yhwyzws65ml7"width="56" height="14" alt="LinkedIn"><span>&copy;2015</span>
 </div>
 <ul class="nav-legal">
 <li><a href="#">User Agreement</a></li>
@@ -163,7 +142,6 @@
 <li><a href="#">Cookie Policy</a></li><li><a href="https://www.linkedin.com/legal/copyright-policy?trk=uno-reg-guest-home-copyright-policy">Copyright Policy</a></li>
 <li><a href="#">Guest Controls</a></li>
 <li class="lang-container"><a href="#" title="Change language" class="lang-trigger">Language</a>
-
 </div>
 </li>
 </ul>
@@ -171,6 +149,9 @@
 </div>
 </div>
 </div>
+</div>
+</div>
+</footer>
 </div>
 </body>
 </html>
