@@ -1,75 +1,90 @@
 .form-container 
 {
-  background: #f0f0f0;
-  width: 430px;
-  height: auto;
-  margin: 20px auto ;
+  background: #EEEEEE;
+  width: 400px;
+ margin: 20px auto ;
   padding-top: 10px;
   z-index: 1000;
 
 }
 
-.register{
-  padding-left:40px;
-  padding-top:0px;
+.register_block{
+  padding-left:25px;
+
   padding-bottom:20px;
 }
 
-.registerh4{
-
-  padding: 0px 8px;
-
-  font-weight: 300;
-  text-align: center;
-  color: #000000;
+.register_subheading{
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: -5px;
+    margin-bottom: 18px;
+    font-weight: lighter;
+    text-align: center;
+    color: #333;
 }
-.registerh{
-
-  padding: 0px 0;
-  font-size: 20px;
-  font-weight: 300;
-  text-align: center;
-  color: #000000;
-}
-.register input[type="text"],.register input[type="email"],.register input[type="password"]
+.register_heading
 {
-
-
-   width: 85%;
-height:8px;
-  background: #ffffff;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    color: #333;
+}
+.register_block input[type="text"]
+{
+background: #ffffff;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   padding: 17px;
 font-size: 15px;
-
-
+}
+.register_block input[type="email"]
+{
+background: #ffffff;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 17px;
+font-size: 15px;
+}
+.register_block input[type="password"]
+{
+background: #ffffff;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 17px;
+font-size: 15px;
 }
 h6{
 font-size: 15px;
 
 }
-
+.move
+{
+margin-left: 75px;
+}
 
 input:focus { 
 
     border-color: #0040FF;
     box-shadow: 0 0 5px  #0040FF;
 }
-.register p{
-
-margin-right: 280px;
-color:#848484; 
-font-size:13px; 
-margin: 0 0 -2px;
+.register_block p{
+font-size: 12px;
+line-height: 14px;
+color: #66696a;
+z-index: 2;
+margin: 0 0 2px;
 }
-.register h6
+.register_block h6
 {
 font-size:12px;
 color:#848484; 
-text-align: center;
+
 }
-.register h6 a
+.register_block a
 {
 font-weight: 500px;
 color:black; 
@@ -78,7 +93,7 @@ color:black;
 {
     float: left;
     margin-left: 18px;
-        font-size: 15px;
+    font-size: 15px;
 
 }
 .cross {
@@ -87,13 +102,13 @@ color:black;
 }
 #text
 {
-    margin-left: -106px;
+    float: left;
 
 }
-.msg
+.message
 {
-width:331px;
-height:36px;
+  height:33px;
+  width: 338px;
 color:white;
 margin-left: 0px;
 background-color: #DF0101;
@@ -102,13 +117,40 @@ text-align: center;
 padding-top:10px;
 
 }
-.msg img
+#firstname
 {
-float:left;
 
+  height:30px;
+  width: 338px;
+}
+#lastname
+{
+
+  height:30px;
+  width: 338px;
 
 }
-.msg p
+#email
+{
+  height:30px;
+  width: 338px;
+}
+#password
+{
+  height:30px;
+  width: 338px;
+}
+#register
+{
+  height:36px;
+  width: 338px;
+
+}
+.message img
+{
+float:left;
+}
+.message p
 {
 font-size: 0px;
 }
@@ -129,12 +171,14 @@ span
 font-size:12px;
 
 }
-.register input[type="button"] {
-  width: 85%;
-  background: #FFBF00;
+ #register
+{
+  height:36px;
+  width: 338px;
+  background: #F1BE18;
   border: 10px;
   padding:10px;
-  font-size: 15px;
+  font-size: 16px;
   color: #000000;
   cursor: pointer;
   border-radius: 5px;
@@ -153,6 +197,6 @@ font-size:12px;
 
 
 .lform{
-  text-align: right;
-  height: auto;
+float:right;
+
 }
