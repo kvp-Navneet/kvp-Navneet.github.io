@@ -102,7 +102,7 @@ color:black;
 }
 #text
 {
-    float: left;
+   margin:0 auto ;
 
 }
 .message
