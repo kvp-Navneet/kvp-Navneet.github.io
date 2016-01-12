@@ -102,8 +102,7 @@ color:black;
 }
 #text
 {
-   margin:0 auto ;
-
+ text-align:center;
 }
 .message
 {
